@@ -1,0 +1,93 @@
+.homePageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+}
+
+.rating-box {
+    border: 2px solid goldenrod;
+    border-radius: 1.4em;
+    padding: 0.6em 1.2em;
+    color: rgb(211, 151, 0);
+    margin-top: 1em;
+}
+
+.home-heading {
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 3em;
+    margin-top: 0.3em;
+}
+
+.menu-btn {
+    background-color: #003d00;
+    color: white;
+    padding: 0.7em 1.6em;
+    border: none;
+    border-radius: 1.5em;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin-bottom: 2em;
+}
+
+.hero-img {
+    width: 85%;
+    height: 800px;
+    margin-bottom: 5em;
+}
+
+.bottom-div {
+    width: 100vw;
+    display: flex;
+    padding: 3em 5em;
+    background-color: rgb(243, 224, 116);
+}
+
+.left-div {
+    padding-left: 14em;
+}
+
+.left-div-heading {
+    font-size: 3.2em;
+    margin-bottom: 0;
+}
+
+.sub-text {
+    font-size: 1.3em;
+    margin-bottom: 2.5em;
+    color: rgb(46, 46, 46);
+}
+
+.info-list {
+    list-style-type: "\1F36A";
+}
+
+.info-list > li {
+    margin-bottom: 1em;
+    font-size: 1.4em;
+    margin-left: -0.5em;
+}
+
+.info-list > li > span {
+    margin-left: 0.4em;
+}
+
+.left-div button {
+    margin-top: 2em;
+}
+
+.right-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 14em;
+}
+
+.right-div-img {
+    max-width: 80%;
+    height: 80%;
+    border: 1px solid grey;
+    border-radius: 1em;
+}
