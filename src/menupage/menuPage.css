@@ -1,0 +1,66 @@
+.menu-content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-container-heading {
+    font-size: 3em;
+    margin: 1.5em 0 1em;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.image-container > img {
+    width: 20%;
+    border: 1px solid gray;
+    border-radius: 1em;
+    margin-right: 1em;
+}
+
+.menu-container {
+    border: 1px solid black;
+    padding: 0.5em 2em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em 2em;
+}
+
+.menu-heading1,
+.menu-heading2,
+.menu-heading3 {
+    font-size: 1.5em;
+    grid-column: 1 / 4;
+    margin-bottom: 0.3em;
+    border-bottom: 2px solid black;
+}
+
+.card {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    padding: 0 0.5em 0 0;
+}
+
+.dish-title,
+.info {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.info {
+    font-size: 0.8em;
+    color: grey;
+}
+
+.price {
+    font-size: 1.5em;
+}
