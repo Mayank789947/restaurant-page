@@ -2,6 +2,9 @@ import "./menuPage.css";
 
 export function loadMenu() {
 
+    const menuNavBtn = document.querySelector(".menu");
+    menuNavBtn.classList.add("active");
+
     const content = document.querySelector("#content");
 
     const menuContentContainer = document.createElement("div");

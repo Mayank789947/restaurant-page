@@ -2,6 +2,9 @@ import "./about.css";
 
 export function loadAbout() {
 
+    const aboutNavBtn = document.querySelector(".about");
+    aboutNavBtn.classList.add("active");
+
     const content = document.querySelector("#content");
 
     const aboutContent = document.createElement("div");

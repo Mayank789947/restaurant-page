@@ -2,6 +2,9 @@ import "./homepage.css";
 
 export function homePage() {
 
+    const homeNavBtn = document.querySelector(".home");
+    homeNavBtn.classList.add("active");
+
     const content = document.querySelector("#content");
 
     const homePageContent = document.createElement("div");

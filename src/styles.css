@@ -57,6 +57,13 @@ header {
     text-underline-offset: 0.4em;
 }
 
+.active {
+    text-decoration: underline;
+    text-decoration-color: #003d00;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4em;
+}
+
 .contact-number {
     border: 1px solid #003d00;
     padding: 0.5em 1.5em;

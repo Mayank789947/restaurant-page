@@ -2,6 +2,9 @@ import "./contact.css";
 
 export function loadContact() {
 
+    const contactNavBtn = document.querySelector(".contact");
+    contactNavBtn.classList.add("active");
+
     const content = document.querySelector("#content");
 
     const contactContent = document.createElement("div");
