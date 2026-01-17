@@ -1,4 +1,12 @@
+import { loadMenu } from "../menupage/menuPage";
 import "./homepage.css";
+
+function viewMenu() {
+    content.innerHTML = "";
+    const buttons = document.querySelectorAll(".btn");
+    buttons.forEach(button => button.classList.remove("active"));
+    loadMenu();
+}
 
 export function homePage() {
 
@@ -12,7 +20,7 @@ export function homePage() {
 
     const rating = document.createElement("div")
     rating.textContent = "💖 Loved by 3.8k users with 4.9 rating";
-    rating.classList.add("rating-box"); 
+    rating.classList.add("rating-box");
 
     const heading = document.createElement("h1");
     heading.textContent = "Welcome To Food Heaven Where Flavor Meets Excellence!";
@@ -21,6 +29,9 @@ export function homePage() {
     const menuBtn = document.createElement("button");
     menuBtn.textContent = "View Menu 🥜";
     menuBtn.classList.add("menu-btn");
+    menuBtn.addEventListener("click", () => {
+        viewMenu();
+    });
 
     const heroImage = document.createElement("img");
     heroImage.src = "https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -28,7 +39,7 @@ export function homePage() {
 
     const bottomDiv = document.createElement("div");
     bottomDiv.classList.add("bottom-div");
-    
+
     const leftDiv = document.createElement("div");
     leftDiv.classList.add("left-div");
 
@@ -66,6 +77,14 @@ export function homePage() {
     const bottomDivMenuBtn = document.createElement("button");
     bottomDivMenuBtn.textContent = "View Menu 🥜";
     bottomDivMenuBtn.classList.add("menu-btn");
+    bottomDivMenuBtn.addEventListener("click", () => {
+        window.scrollTo({
+            top: 0,
+            left: 0,
+            behavior: 'smooth' // This adds the smooth animation
+        })
+        viewMenu();
+    })
 
     leftDiv.appendChild(leftDivHeading);
     leftDiv.appendChild(subText);
@@ -76,7 +95,7 @@ export function homePage() {
     rightDivImage.classList.add("right-div-img");
     rightDivImage.src = "https://images.unsplash.com/photo-1556742205-e10c9486e506?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     rightDiv.appendChild(rightDivImage);
-    
+
 
     homePageContent.appendChild(rating);
     homePageContent.appendChild(heading);

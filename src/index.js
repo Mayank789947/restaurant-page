@@ -5,7 +5,6 @@ import { loadAbout } from "./about/about.js";
 import { loadContact } from "./contact/contact.js";
 
 
-const content = document.querySelector("#content");
 const buttons = document.querySelectorAll(".btn");
 
 function clearContent() {
