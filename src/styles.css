@@ -1,0 +1,74 @@
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: beige;
+}
+
+header {
+    padding: 1em 0;
+    border-bottom: 1px solid goldenrod;
+    margin: 0 auto;
+    width: 70%;
+    box-shadow: 0 2px rgb(230, 230, 230);
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1em;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    font-size: 2em;
+    font-weight: bold;
+    position: relative;
+    margin-left: 1.5em;
+    color: #003d00;
+}
+
+.nav-logo > span {
+    margin-right: 0.2em;
+    position: absolute;
+    top: -3px;
+    left: -40px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 2em;
+}
+
+.btn {
+    background-color: beige;
+    border: none;
+    outline: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    color: #003d00;
+}
+
+.btn:hover {
+    text-decoration: underline;
+    text-decoration-color: #003d00;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 0.4em;
+}
+
+.contact-number {
+    border: 1px solid #003d00;
+    padding: 0.5em 1.5em;
+    border-radius: 1em;
+    background-color: azure;
+    cursor: pointer;
+}
+
+.contact-number > span {
+    margin-left: 0.5em;
+}
+
+.contact-number:hover {
+    border: 1px solid goldenrod;
+}
