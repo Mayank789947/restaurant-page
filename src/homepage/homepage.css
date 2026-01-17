@@ -30,10 +30,15 @@
     font-size: 1.4em;
     font-weight: 700;
     margin-bottom: 2em;
+    cursor: pointer;
+}
+
+.menu-btn:hover {
+    background-color: #005200;
 }
 
 .hero-img {
-    width: 85%;
+    width: 80%;
     height: 800px;
     margin-bottom: 5em;
 }
@@ -46,7 +51,7 @@
 }
 
 .left-div {
-    padding-left: 14em;
+    padding-left: 16em;
 }
 
 .left-div-heading {
@@ -82,7 +87,7 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 14em;
+    padding-right: 16em;
 }
 
 .right-div-img {
